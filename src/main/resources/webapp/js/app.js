@@ -3,7 +3,7 @@
 
     /* App Module */
 
-    angular.module('bid', ['motech-dashboard', 'bid.controllers', 'ngCookies', 'ui.bootstrap', 'ngSanitize']).config(
+    angular.module('bid', ['motech-dashboard', 'bid.controllers', 'bid.directives', 'ngCookies', 'ui.bootstrap', 'ngSanitize']).config(
     ['$routeProvider',
         function ($routeProvider) {
             $routeProvider.

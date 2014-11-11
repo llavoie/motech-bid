@@ -15,7 +15,7 @@ Build-Jdk: 1.7.0_60
 Resource-Path: bid/resources
 Bundle-Version: 0.1.0.SNAPSHOT
 Context-Path: bid
-Bnd-LastModified: 1415742398962
+Bnd-LastModified: 1415743846911
 Bundle-ManifestVersion: 2
 Import-Package: javax.jdo.annotations;version="[3.0,4)",org.apache.com
  mons.lang;version="[2.6,3)",org.joda.time;version="[2.0,3)",org.motec
