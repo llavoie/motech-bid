@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Export-Package: org.motechproject.bid.service;uses:="org.motechproject
+ .bid.domain,org.joda.time";version="0.1.0.SNAPSHOT",org.motechproject
+ .bid.repository;uses:="org.motechproject.bid.domain,org.motechproject
+ .mds.annotations,org.motechproject.mds.service";version="0.1.0.SNAPSH
+ OT",org.motechproject.bid.domain;uses:="javax.jdo.annotations,org.mot
+ echproject.mds.annotations,org.joda.time,org.apache.commons.lang";ver
+ sion="0.1.0.SNAPSHOT"
+Blueprint-Enabled: true
+Built-By: lauren
+Tool: Bnd-1.43.0
+Bundle-Name: MOTECH BID Module
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.7.0_60
+Resource-Path: bid/resources
+Bundle-Version: 0.1.0.SNAPSHOT
+Context-Path: bid
+Bnd-LastModified: 1415742398962
+Bundle-ManifestVersion: 2
+Import-Package: javax.jdo.annotations;version="[3.0,4)",org.apache.com
+ mons.lang;version="[2.6,3)",org.joda.time;version="[2.0,3)",org.motec
+ hproject.bid.domain;version="[0.1,1)",org.motechproject.bid.repositor
+ y;version="[0.1,1)",org.motechproject.bid.service;version="[0.1,1)",o
+ rg.motechproject.mds.annotations;version="[0.25,1)",org.motechproject
+ .mds.service;version="[0.25,1)",org.motechproject.osgi.web;version="[
+ 0.25,1)",org.springframework.beans.factory.annotation;version="[3.1,4
+ )",org.springframework.stereotype;version="[3.1,4)",org.springframewo
+ rk.web.bind.annotation;version="[3.1,4)"
+Bundle-SymbolicName: org.motechproject.bid
+

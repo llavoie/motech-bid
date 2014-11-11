@@ -1,0 +1,3 @@
+org/motechproject/bid/service/it/IntegrationTests.class
+org/motechproject/bid/service/it/PatientServiceIT.class
+org/motechproject/bid/service/it/FacilityServiceIT.class
