@@ -3,6 +3,7 @@ The following files have been resolved:
    org.mortbay.jetty:servlet-api:jar:2.5-20081211:test
    org.hamcrest:com.springsource.org.hamcrest.core:jar:1.1.0:compile
    org.javassist:javassist:jar:3.18.1-GA:compile
+   org.motechproject:schedule-tracking:jar:0.25-SNAPSHOT:compile
    org.apache.maven:maven-model:jar:3.0.4:compile
    org.aopalliance:com.springsource.org.aopalliance:jar:1.0.0:compile
    org.ops4j.pax.url:pax-url-classpath:jar:1.6.0:test
@@ -29,24 +30,29 @@ The following files have been resolved:
    org.apache.felix:org.apache.felix.framework:jar:4.2.1:compile
    commons-logging:commons-logging:jar:1.0.4:compile
    org.springframework:org.springframework.context:jar:3.1.0.RELEASE:compile
+   org.apache.geronimo.specs:com.springsource.javax.management.j2ee:jar:1.0.1:compile
+   org.motechproject:motech-scheduler:jar:0.25-SNAPSHOT:compile
    org.ops4j.base:ops4j-base-io:jar:1.4.0:test
    org.motechproject:motech-platform-commons-date:jar:0.25-SNAPSHOT:compile
    javax.validation:com.springsource.javax.validation:jar:1.0.0.GA:compile
    org.slf4j:com.springsource.slf4j.api:jar:1.6.1:compile
    com.google.guava:guava:jar:r08:compile
    org.eclipse.osgi:org.eclipse.osgi.services:jar:3.3.0.v20110513:compile
+   javax.jms:com.springsource.javax.jms:jar:1.1.0:compile
    javax.servlet:com.springsource.javax.servlet:jar:2.5.0:compile
    org.springframework:org.springframework.web.servlet:jar:3.1.0.RELEASE:compile
    org.datanucleus:datanucleus-core:jar:3.2.12:compile
    org.apache.commons:com.springsource.org.apache.commons.io:jar:1.4.0:compile
    net.sourceforge.cglib:com.springsource.net.sf.cglib:jar:2.2.0:compile
    junit:junit:jar:4.11:test
+   org.apache.activemq:org.motechproject.org.apache.activemq:jar:5.4.2-r027:compile
    org.apache.commons:com.springsource.org.apache.commons.logging:jar:1.1.1:compile
    org.ops4j.pax.exam:pax-exam-junit4:jar:3.4.0:test
    org.apache.felix:org.apache.felix.eventadmin:jar:1.3.2:compile
    org.springframework:org.springframework.jdbc:jar:3.1.0.RELEASE:compile
    org.aspectj:com.springsource.org.aspectj.weaver:jar:1.6.12.RELEASE:compile
    javax.servlet:servlet-api:jar:2.5:test
+   org.springframework:org.springframework.jms:jar:3.1.0.RELEASE:compile
    org.apache.commons:org.motechproject.org.apache.commons.configuration:jar:1.8-r027:compile
    com.thoughtworks.paranamer:paranamer:jar:2.6:compile
    org.datanucleus:datanucleus-api-jpa:jar:3.3.6:compile
@@ -54,15 +60,19 @@ The following files have been resolved:
    org.springframework:org.springframework.aop:jar:3.1.0.RELEASE:compile
    org.motechproject:motech-platform-config-core:jar:0.25-SNAPSHOT:compile
    org.osgi:org.osgi.compendium:jar:5.0.0:compile
+   org.springframework.integration:spring-integration-jms:jar:2.1.0.RELEASE:compile
    org.apache.commons:com.springsource.org.apache.commons.beanutils:jar:1.8.3:compile
    org.ops4j.base:ops4j-base-util-collections:jar:1.4.0:compile
    org.ops4j.pax.exam:pax-exam-container-native:jar:3.4.0:test
+   javax.ejb:com.springsource.javax.ejb:jar:3.0.0:compile
    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
    mysql:mysql-connector-java:jar:5.1.32:compile
    org.ops4j.pax.url:pax-url-aether:jar:1.6.0:compile
+   org.motechproject:motech-platform-server-config:jar:0.25-SNAPSHOT:compile
    org.sonatype.aether:aether-spi:jar:1.13.1:compile
    org.ops4j.base:ops4j-base-util-property:jar:1.4.0:compile
    com.mchange.c3p0:com.springsource.com.mchange.v2.c3p0:jar:0.9.1:compile
+   org.motechproject:motech-c3p0-fragment-bundle:jar:0.16-r027:compile
    org.springframework:org.springframework.asm:jar:3.1.0.RELEASE:compile
    biz.aQute.bnd:bndlib:jar:2.1.0:test
    org.ops4j.pax.exam:pax-exam-link-mvn:jar:3.4.0:test
@@ -72,6 +82,7 @@ The following files have been resolved:
    org.datanucleus:datanucleus-rdbms:jar:3.2.12:compile
    org.motechproject:motech-platform-osgi-web-util:jar:0.25-SNAPSHOT:compile
    org.mortbay.jetty:jetty:jar:6.1.24:test
+   org.apache.activemq:kahadb:jar:5.4.2:compile
    org.osgi:org.osgi.core:jar:5.0.0:test
    org.apache.servicemix.bundles:org.apache.servicemix.bundles.paranamer:jar:2.6_1:compile
    org.ops4j.pax.url:pax-url-maven-commons:jar:1.6.0:compile
@@ -79,11 +90,14 @@ The following files have been resolved:
    org.jsoup:jsoup:jar:1.6.1:compile
    commons-codec:commons-codec:jar:1.7:compile
    org.springframework:org.springframework.beans:jar:3.1.0.RELEASE:compile
+   org.apache.commons:com.springsource.org.apache.commons.vfs:jar:1.0.0:compile
    org.sonatype.aether:aether-api:jar:1.13.1:compile
    org.objectweb.asm:com.springsource.org.objectweb.asm.commons:jar:2.2.3:compile
+   org.springframework.integration:spring-integration-core:jar:2.1.0.RELEASE:compile
    org.ops4j.pax.swissbox:pax-swissbox-core:jar:1.7.0:test
    org.springframework:org.springframework.core:jar:3.1.0.RELEASE:compile
    org.codehaus.jackson:org.motechproject.org.codehaus.jackson:jar:1.9.7-r027:compile
+   javax.activation:com.springsource.javax.activation:jar:1.1.1:compile
    javax.jdo:jdo-api:jar:3.0.1:compile
    org.apache.velocity:com.springsource.org.apache.velocity:jar:1.6.2:compile
    org.motechproject:motech-platform-dataservices-migration:jar:0.25-SNAPSHOT:compile
@@ -108,6 +122,7 @@ The following files have been resolved:
    org.ops4j.base:ops4j-base-monitors:jar:1.4.0:test
    org.ops4j.pax.url:pax-url-link:jar:1.6.0:test
    org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+   org.objectweb.howl:com.springsource.org.objectweb.howl:jar:1.0.2:compile
    org.slf4j:com.springsource.slf4j.org.apache.commons.logging:jar:1.6.1:compile
    org.springframework:org.springframework.web:jar:3.1.0.RELEASE:compile
    org.motechproject:motech-pax-it:jar:0.25-SNAPSHOT:test
@@ -118,6 +133,7 @@ The following files have been resolved:
    org.ops4j.base:ops4j-base-net:jar:1.4.0:test
    org.hamcrest:hamcrest-core:jar:1.3:test
    org.datanucleus:datanucleus-api-jdo:jar:3.2.7:compile
+   javax.xml.soap:com.springsource.javax.xml.soap:jar:1.3.0:compile
    org.ops4j.base:ops4j-base-store:jar:1.4.0:test
    org.apache.felix:org.apache.felix.http.jetty:jar:2.2.0:test
    org.motechproject:motech-osgi-platform:jar:0.25-SNAPSHOT:compile
@@ -130,6 +146,7 @@ The following files have been resolved:
    com.googlecode.flyway:flyway-core:jar:2.3.1:compile
    org.ops4j.base:ops4j-base-util-xml:jar:1.4.0:compile
    org.springframework:org.springframework.orm:jar:3.1.0.RELEASE:compile
+   org.motechproject:motech-platform-event:jar:0.25-SNAPSHOT:compile
    org.apache.log4j:com.springsource.org.apache.log4j:jar:1.2.16:compile
    org.ops4j.pax.swissbox:pax-swissbox-property:jar:1.7.0:compile
    org.slf4j:com.springsource.slf4j.log4j:jar:1.6.1:compile
@@ -139,6 +156,7 @@ The following files have been resolved:
    org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
    org.springframework.security:org.springframework.security.core:jar:3.1.0.RELEASE:compile
    org.motechproject:motech-pax-it-container:jar:0.25-SNAPSHOT:test
+   javax.xml.rpc:com.springsource.javax.xml.rpc:jar:1.1.0:compile
    org.apache.maven.wagon:wagon-file:jar:1.0:compile
    org.apache.maven.wagon:wagon-http-lightweight:jar:1.0:compile
    org.motechproject:motech-platform-commons-sql:jar:0.25-SNAPSHOT:compile

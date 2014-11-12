@@ -1,6 +1,7 @@
 org/motechproject/bid/service/impl/FacilityServiceImpl.class
 org/motechproject/bid/domain/PatientRecord.class
 org/motechproject/bid/domain/Patient.class
+org/motechproject/bid/web/VaxController$1.class
 org/motechproject/bid/repository/PatientDataService.class
 org/motechproject/bid/web/VaxController.class
 org/motechproject/bid/service/FacilityService.class

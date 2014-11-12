@@ -38,6 +38,8 @@
 
     <osgi:reference id="facilityDataService" interface="org.motechproject.bid.repository.FacilityDataService" />
 
+    <osgi:reference id="scheduleTrackingService" interface="org.motechproject.scheduletracking.service.ScheduleTrackingService" />
+
     <mvc:annotation-driven/>
 
 </beans>
