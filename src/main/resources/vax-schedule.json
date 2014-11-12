@@ -1,0 +1,43 @@
+{
+    "name":"Vaccination Schedule",
+    "milestones":[
+        {
+            "name":"Rotavirus1",
+            "scheduleWindows":{
+                "earliest":["8 Weeks"],
+                "due":["9 Weeks"],
+                "late":["10 Weeks"],
+                "max":[""]
+            },
+            "data":{
+                "Rotavirus":"1"
+            },
+            "alerts":[
+                {
+                    "window":"due",
+                    "offset":["0 Weeks"],
+                    "interval":["1 Day"],
+                    "count":"7"
+                },
+                {
+                    "window":"late",
+                    "offset":["1 Week", "4 hours"],
+                    "interval":["1 Week"],
+                    "count":"51"
+                }
+            ]
+        },
+        {
+            "name":"DTaP1",
+            "scheduleWindows":{
+                "earliest":["8 Weeks"],
+                "due":["9 Weeks"],
+                "late":["10 Weeks"],
+                "max":[""]
+            },
+            "data":{
+                "DTaP":"1"
+            }
+        }
+    ]
+}

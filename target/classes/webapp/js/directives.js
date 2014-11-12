@@ -1,26 +1,6 @@
 (function () {
     'use strict';
 
-    // from http://stackoverflow.com/questions/14859266/input-autofocus-attribute
-    angular.module('ng').directive('ngFocus', function($timeout) {
-        return {
-            link: function ( scope, element, attrs ) {
-                scope.$watch( attrs.ngFocus, function ( val ) {
-                    if ( angular.isDefined( val ) && val ) {
-                        $timeout( function () { element[0].focus(); } );
-                    }
-                }, true);
-
-                element.bind('blur', function () {
-                    if ( angular.isDefined( attrs.ngFocusLost ) ) {
-                        scope.$apply( attrs.ngFocusLost );
-
-                    }
-                });
-            }
-        };
-    });
-
     var directives = angular.module('bid.directives', []);
 
     directives.directive('patientJqgridSearch', function () {
@@ -134,27 +114,27 @@
                     colModel: [{
                         name: 'externalId',
                         index: 'externalId',
-                        width: 50
+                        width: 90
                     }, {
                         name: 'lastName',
                         index: 'lastName',
-                        width: 50
+                        width: 90
                     }, {
                         name: 'firstName',
                         index: 'firstName',
-                        width: 50
+                        width: 90
                     }, {
                         name: 'dateOfBirth',
                         index: 'dateOfBirth',
-                        width: 80
+                        width: 130
                     }, {
                         name: 'gender',
                         index: 'gender',
-                        width: 40
+                        width: 80
                     }, {
                         name: 'village',
                         index: 'village',
-                        width: 50
+                        width: 90
                     }],
                     pager: '#' + attrs.patientGrid,
                     sortname: 'externalId',
@@ -179,6 +159,10 @@
                         $('#outsidePatientTable').children('div').each(function() {
                             $(this).find('table').width('100%');
                         });
+                        /*
+                        var startDateTextBox = angular.element('#dateTimeFrom'),
+                            endDateTextBox = angular.element('#dateTimeTo');
+                            */
                     }
                 });
             }

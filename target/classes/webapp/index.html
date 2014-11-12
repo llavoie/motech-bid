@@ -19,3 +19,43 @@
         </div>
     </div>
 </div>
+
+<div id="inner-east" class="sms inner-east ui-layout-pane ui-layout-pane-east">
+    <div class="header-toolbar header-footer"></div>
+    <!------------------------  Filters  ------------------------>
+    <div class="filter-header">{{msg('sms.log.filters')}}</div>
+    <div class="ui-layout-content">
+        <div class="inside">
+            <fieldset class="inside"><legend>{{msg('bid.patient.externalId')}}</legend>
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm search-query" placeholder="{{msg('sms.log.search')}}" data-event-type="keyup" data-search-field="externalId" patient-jqgrid-search="patientTable">
+                </div>
+            </fieldset>
+            <fieldset class="inside"><legend>{{msg('bid.patient.lastName')}}</legend>
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm search-query" placeholder="{{msg('sms.log.search')}}" data-event-type="keyup" data-search-field="lastName" patient-jqgrid-search="patientTable">
+                </div>
+            </fieldset>
+            <fieldset class="inside"><legend>{{msg('bid.patient.firstName')}}</legend>
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm search-query" placeholder="{{msg('sms.log.search')}}" data-event-type="keyup" data-search-field="firstName" patient-jqgrid-search="patientTable">
+                </div>
+            </fieldset>
+            <fieldset class="inside"><legend>{{msg('bid.patient.dateOfBirth')}}</legend>
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm search-query" placeholder="{{msg('sms.log.search')}}" data-event-type="keyup" data-search-field="dateOfBirth" patient-jqgrid-search="patientTable">
+                </div>
+            </fieldset>
+            <fieldset class="inside"><legend>{{msg('bid.patient.gender')}}</legend>
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm search-query" placeholder="{{msg('sms.log.search')}}" data-event-type="keyup" data-search-field="gender" patient-jqgrid-search="patientTable">
+                </div>
+            </fieldset>
+            <fieldset class="inside"><legend>{{msg('bid.patient.village')}}</legend>
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm search-query" placeholder="{{msg('sms.log.search')}}" data-event-type="keyup" data-search-field="village" patient-jqgrid-search="patientTable">
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>

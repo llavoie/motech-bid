@@ -2,6 +2,7 @@ package org.motechproject.bid.web;
 
 import org.motechproject.bid.domain.Patient;
 import org.motechproject.bid.service.PatientService;
+import org.motechproject.bid.domain.PatientRecords;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -31,8 +32,10 @@ public class VaxController {
 
     @RequestMapping(value = "/vax", method = RequestMethod.GET)
     @ResponseBody
-    public String getPatients() {
-        return patientService.getPatients();
+    public PatientRecords getPatients() {
+        List<Patient> patientEntities = patientService.getPatients();
+        PatientRecords patients = new PatientRecords(patientEntities);
+        return patients;
     }
 
 }

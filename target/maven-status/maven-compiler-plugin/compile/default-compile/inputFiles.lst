@@ -6,5 +6,7 @@
 /home/lauren/Code/motech-bid/src/main/java/org/motechproject/bid/service/impl/FacilityServiceImpl.java
 /home/lauren/Code/motech-bid/src/main/java/org/motechproject/bid/service/PatientService.java
 /home/lauren/Code/motech-bid/src/main/java/org/motechproject/bid/repository/PatientDataService.java
+/home/lauren/Code/motech-bid/src/main/java/org/motechproject/bid/domain/PatientRecord.java
 /home/lauren/Code/motech-bid/src/main/java/org/motechproject/bid/domain/Facility.java
+/home/lauren/Code/motech-bid/src/main/java/org/motechproject/bid/domain/PatientRecords.java
 /home/lauren/Code/motech-bid/src/main/java/org/motechproject/bid/web/VaxController.java
