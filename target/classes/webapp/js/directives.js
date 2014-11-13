@@ -152,9 +152,13 @@
                         index: 'gender',
                         width: 40
                     }, {
-                        name: 'village',
-                        index: 'village',
-                        width: 50
+                        name: 'vaxSchedule',
+                        index: 'vaxSchedule',
+                        width: 50,
+                        sortable: false,
+                        formatter: function() {
+                            return '<button ng-click="VaxCtrl.showSchedule()">View</button>';
+                        }
                     }],
                     pager: '#' + attrs.patientGrid,
                     sortname: 'externalId',
@@ -162,7 +166,7 @@
                     viewrecords: true,
                     gridComplete: function () {
                         angular.forEach(['externalId', 'lastName', 'firstName', 'dateOfBirth', 'gender',
-                            'village'], function (value) {
+                            'vaxSchedule'], function (value) {
                             elem.jqGrid('setLabel', value, scope.msg('bid.patient.' + value));
                         });
                         $('#outsidePatientTable').children('div').width('100%');

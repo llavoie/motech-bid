@@ -1,6 +1,11 @@
 <div class="row">
 
     <div id="filters" class="frame-title">
+
+        <button type="button" class="btn btn-default" ng-click="VaxCtrl.showSchedule()">
+            <i class="icon-filter icon-white"></i>BAZ
+        </button>
+
         <button type="button" class="btn btn-default" id="patient-filters">
             <i class="icon-filter icon-white"></i>&nbsp;{{msg('bid.patient.filters')}}
         </button>
@@ -10,5 +15,7 @@
         <table id="patientTable" patient-grid="pagePatientTable"></table>
         <div id="pagePatientTable"></div>
     </div>
+
+    <div ng-include="'../bid/resources/partials/widgets/vax-schedule-modal.html'"></div>
 
 </div>

@@ -3,22 +3,8 @@
 
     var controllers = angular.module('bid.controllers', []);
 
-/*
-    controllers.controller('VaxController', function ($scope, $http) {
-        $http.get('../bid/vax')
-            .success(function(response) {
-                $scope.message = response;
-            })
-            .error(function(response) {
-                $scope.message = 'request failed';
-            });
 
-    });
-*/
-
-    controllers.controller('VaxController', function ($scope, $http) {
-        $scope.log = [];
-
+    controllers.controller('VaxCtrl', function ($scope, $rootScope, $http) {
         innerLayout({
             spacing_closed: 30,
             east__minSize: 200,
@@ -27,9 +13,15 @@
             show: true,
             button: '#patient-filters'
         });
+
+        $scope.count = 0;
+
+        $scope.showSchedule = function() {
+            $scope.count = count + 1;
+            //$('#vaxScheduleModal').modal('show');
+        };
+
     });
-
-
 
 
 }());
