@@ -43,6 +43,7 @@ public class VaxController {
     public PatientRecords getPatients() {
         final List<Patient> patientEntities = patientService.getPatients();
 
+        // temp hackiness to work around lack of MDS CRUD events; will move this to a better home
         Runnable r = new Runnable() {
             public void run() {
                 for(Patient p : patientEntities) {
