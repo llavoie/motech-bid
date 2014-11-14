@@ -157,7 +157,7 @@
                         width: 50,
                         sortable: false,
                         formatter: function() {
-                            return '<button ng-click="VaxCtrl.showSchedule()">View</button>';
+                            return '<button ng-click="showSchedule()">View</button>';
                         }
                     }],
                     pager: '#' + attrs.patientGrid,
