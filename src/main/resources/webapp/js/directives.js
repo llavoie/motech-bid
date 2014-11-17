@@ -169,6 +169,9 @@
                             'vaxSchedule'], function (value) {
                             elem.jqGrid('setLabel', value, scope.msg('bid.patient.' + value));
                         });
+                        angular.forEach(elem.find('button'), function(value) {
+                            $compile(value)(scope);
+                        });
                         $('#outsidePatientTable').children('div').width('100%');
                         $('.ui-jqgrid-htable').addClass("table-lightblue");
                         $('.ui-jqgrid-btable').addClass("table-lightblue");
