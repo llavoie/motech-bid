@@ -14,11 +14,8 @@
             button: '#patient-filters'
         });
 
-        $scope.count = 0;
-
         $scope.showSchedule = function() {
-            $scope.count = count + 1;
-            //$('#vaxScheduleModal').modal('show');
+            $('#vaxScheduleModal').modal('show');
         };
 
     });

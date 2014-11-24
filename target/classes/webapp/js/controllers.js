@@ -17,8 +17,8 @@
         $scope.count = 0;
 
         $scope.showSchedule = function() {
-            $scope.count = count + 1;
-            //$('#vaxScheduleModal').modal('show');
+            //$scope.count = count + 1;
+            $('#vaxScheduleModal').modal('show');
         };
 
     });

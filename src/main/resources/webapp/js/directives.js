@@ -192,4 +192,82 @@
         };
     });
 
+
+    directives.directive('vaxGrid', function($compile, $http, $templateCache) {
+        return {
+            restrict: 'A',
+            link: function(scope, element, attrs) {
+                try {
+                    if (typeof($('#outsideVaxTable')[0].grid) !== 'undefined') {
+                        return;
+                    }
+                }
+                catch (e) {
+                    return;
+                }
+
+                var elem = angular.element(element), filters;
+
+                elem.jqGrid({
+                    url: '../bid/vax',
+                    datatype: 'json',
+                    jsonReader:{
+                        repeatitems:false
+                    },
+                    colModel: [{
+                        name: 'externalId',
+                        index: 'externalId',
+                        width: 50
+                    }, {
+                        name: 'lastName',
+                        index: 'lastName',
+                        width: 50
+                    }, {
+                        name: 'firstName',
+                        index: 'firstName',
+                        width: 50
+                    }, {
+                        name: 'dateOfBirth',
+                        index: 'dateOfBirth',
+                        width: 80
+                    }, {
+                        name: 'gender',
+                        index: 'gender',
+                        width: 40
+                    }, {
+                        name: 'vaxSchedule',
+                        index: 'vaxSchedule',
+                        width: 50
+                        }
+                    }],
+                    pager: '#' + attrs.vaxGrid,
+                    sortname: 'externalId',
+                    sortorder: 'asc',
+                    viewrecords: true,
+                    gridComplete: function () {
+                        angular.forEach(['externalId', 'lastName', 'firstName', 'dateOfBirth', 'gender',
+                            'vaxSchedule'], function (value) {
+                            elem.jqGrid('setLabel', value, scope.msg('bid.patient.' + value));
+                        });
+                        $('#outsideVaxTable').children('div').width('100%');
+                        $('.ui-jqgrid-htable').addClass("table-lightblue");
+                        $('.ui-jqgrid-btable').addClass("table-lightblue");
+                        $('.ui-jqgrid-htable').width('100%');
+                        $('.ui-jqgrid-bdiv').width('100%');
+                        $('.ui-jqgrid-hdiv').width('100%');
+                        $('.ui-jqgrid-view').width('100%');
+                        $('#t_patientTable').width('auto');
+                        $('.ui-jqgrid-pager').width('100%');
+                        $('.ui-jqgrid-hbox').css({'padding-right':'0'});
+                        $('.ui-jqgrid-hbox').width('100%');
+                        $('#outsideVaxTable').children('div').each(function() {
+                            $(this).find('table').width('100%');
+                        });
+                    }
+                });
+            }
+        };
+    });
+
+
 }());

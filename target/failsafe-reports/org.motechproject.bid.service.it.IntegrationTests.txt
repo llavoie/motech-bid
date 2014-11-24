@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.motechproject.bid.service.it.IntegrationTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.207 sec - in org.motechproject.bid.service.it.IntegrationTests

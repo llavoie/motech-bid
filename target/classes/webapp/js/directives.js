@@ -157,7 +157,7 @@
                         width: 50,
                         sortable: false,
                         formatter: function() {
-                            return '<button ng-click="VaxCtrl.showSchedule()">View</button>';
+                            return '<button ng-click="showSchedule()">View</button>';
                         }
                     }],
                     pager: '#' + attrs.patientGrid,
@@ -168,6 +168,9 @@
                         angular.forEach(['externalId', 'lastName', 'firstName', 'dateOfBirth', 'gender',
                             'vaxSchedule'], function (value) {
                             elem.jqGrid('setLabel', value, scope.msg('bid.patient.' + value));
+                        });
+                        angular.forEach(elem.find('button'), function(value) {
+                            $compile(value)(scope);
                         });
                         $('#outsidePatientTable').children('div').width('100%');
                         $('.ui-jqgrid-htable').addClass("table-lightblue");
